@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "survey"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Szafran <hello@jszafran.dev>"]
+readme = "README.md"
+packages = [{include = "survey"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyyaml = "^6.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4"
+pre-commit = "3.3.3"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
